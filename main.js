@@ -25,7 +25,7 @@ const sphereGeometry = new THREE.SphereGeometry(200, 32, 32);
 
 // Load the background texture
 const textureLoader = new THREE.TextureLoader();
-const backgroundTexture = textureLoader.load('background4.jpeg');
+const backgroundTexture = textureLoader.load('backgroundThomas.jpeg');
 
 // Create a material using the background texture
 const backgroundMaterial = new THREE.MeshBasicMaterial({
@@ -81,7 +81,7 @@ const light = new THREE.AmbientLight(0xffffff, 0.5);
 const cameraLight = new THREE.PointLight(0xffffff, 100);
 scene.add(light);
 // Add grid helper
-const gridHelper = new THREE.GridHelper(1000, 1000, 0xfc03e8, 0xfc03e8);
+const gridHelper = new THREE.GridHelper(1000, 1000, 0xffffff, 0xffffff);
 scene.add(gridHelper);
 
 // fog
